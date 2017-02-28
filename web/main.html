@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.muicss.com/mui-0.2.8/css/mui.min.css" rel="stylesheet" type="text/css" />
+		<link href="css/main.css" rel="stylesheet" type="text/css" />
+        <script src="https://cdn.muicss.com/mui-0.2.8/js/mui.min.js"></script>
+        <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="js/main.js"></script>
+    </head>
+    <body>
+        <div class="mui-container">
+            <div class="mui-panel">
+                <div class="mui--text-display3 mui--text-black-54">Register Website</div>
+            </div>
+            <div class="mui-panel">
+                <img id="chosenPic" src="img/question.png">
+            </div>
+            <div class="mui-panel">
+                <button id="fileBtn" class="mui-btn mui-btn--accent mui-btn--raised mui-btn--large">input file
+                    <input type="file" id="fileSelector" multiple />
+                </button>
+                <input type="text" id="myText" value="Your ID?" maxlength = 30 size = 30>
+                <button onclick = "myFunction()" id="writeBtn" class="mui-btn mui-btn--primary mui-btn--raised mui-btn--large">write</button>
+                <button id="regBtn" class="mui-btn mui-btn--danger mui-btn--raised mui-btn--large">register</button>
+                <p id = "test"> </p>
+            </div>
+        </div>
+
+        <script>
+        function myFunction()
+        {
+            var x = document.getElementById("myText").value;
+            document.getElementById("test").innerHTML = x;
+        }
+        </script>
+    </body>
+</html>
